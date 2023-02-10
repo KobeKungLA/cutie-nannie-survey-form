@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">cutieNanNie Survey Form</h1>
+            <p id="description" class="description text-center">Thank you for taking the time to help us improve our restaurant</p>
+        </header>
+        
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input
+                    type="text"
+                    name="name"
+                    id="name" 
+                    class="form-control"
+                    placeholder="Enter your name" 
+                    required 
+                />
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input
+                    type="email"
+                    name="email" 
+                    id="email" 
+                    class="form-control"
+                    placeholder="Enter your Email" 
+                    required
+                />
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">Age<span class="clue"> (optional)</span></label>
+                <input
+                    type="number"
+                    name="age" 
+                    id="number" 
+                    class="form-control"
+                    min="18" 
+                    max="120" 
+                    placeholder="Age"
+                />
+            </div>
+            <div class="form-group">
+                <p>Which option best how you like to order?</p>
+                <select name="order" id="dropdown" class="form-control">
+                    <option value="">Select prefer order</option>
+                    <option value="dineIn">Dine in</option>
+                    <option value="takeOut">take out(picked up)</option>
+                    <option value="uber">Uber</option>
+                    <option value="doorDash">Door Dash</option>
+                    <option value="otherOnline">other online order</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Which way more often you go to dine in?</p>
+                <label>
+                    <input name="way-dinein" value="single" type="radio" class="input-radio" checked>
+                    Single
+                </label>
+                <label>
+                    <input name="way-dinein" value="couple" type="radio" class="input-radio">
+                    Couple
+                </label>
+                <label>
+                    <input name="way-dinein" value="party" type="radio" class="input-radio">
+                    Party
+                </label>
+            </div>
+            <div class="form-group">
+                <p>What is your favorite to pay at the restaurant?</p>
+                <select name="like-pay" id="likePay" class="form-control">
+                    <option value="">Select your most like to pay</option>
+                    <option value="visa">Visa</option>
+                    <option value="master">Master</option>
+                    <option value="americanExpress">American Express</option>
+                    <option value="discover">Discover</option>
+                    <option value="applePay">Apple Pay</option>
+                    <option value="cash">Cash</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>What is your fovorite appetizers? 
+                    <span class="clue">(Check all that apply)</span>
+                </p>
+                <label>
+                    <input name="favorite" value="miso-soup" type="checkbox" class="input-checkbox">
+                    Miso soup
+                </label>
+                <label>
+                    <input name="favorite" value="gyoza" type="checkbox" class="input-checkbox">
+                    Gyoza
+                </label>
+                <label>
+                    <input name="favorite" value="spicy-tuna-crispy-rice" type="checkbox" class="input-checkbox">
+                    Spicy tuna Crispy Rice
+                </label>
+                <label>
+                    <input name="favorite" value="edamame" type="checkbox" class="input-checkbox">
+                    Edamame
+                </label>
+                <label>
+                    <input name="favorite" value="Cucumber-salad" type="checkbox" class="input-checkbox">
+                    Cucumber salad
+                </label>
+                <label>
+                    <input name="favorite" value="seaweed-salad" type="checkbox" class="input-checkbox">
+                    Seaweed salad
+                </label>
+                <label>
+                    <input name="favorite" value="Tempura" type="checkbox" class="input-checkbox">
+                    Tempura
+                </label>
+                <label>
+                    <input name="favorite" value="others" type="checkbox" class="input-checkbox">
+                    Others
+                </label>
+            </div>
+            <div class="form-group">
+                <p>Any comments or suggestions?</p>
+            <textarea name="comment" id="comments" cols="30" rows="10" class="input-textarea" placeholder="Enter your comments here...."></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+            
+
+            
+        </form>
+    </div>
+    
+</body>
+</html>
